@@ -1,0 +1,278 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aging Dashboard · Longevity Knowledge Base</title><link rel="stylesheet" href="../../assets/site.css"></head><body><div class="shell"><aside><a class="brand" href="../index.html">Longevity<br>Knowledge Base</a><div class="tagline">Evidence-aware aging research</div><nav><h2>00 Dashboard</h2><a class="active" href="aging-dashboard.html">Aging Dashboard</a><a class="" href="executive-summary.html">Executive Summary</a><h2>01 Concepts</h2><a class="" href="../01-concepts/hallmarks-and-drivers-of-aging.html">Hallmarks and Drivers of Aging</a><a class="" href="../01-concepts/healthspan-vs-lifespan.html">Healthspan vs Lifespan</a><a class="" href="../01-concepts/how-to-read-longevity-evidence.html">How to Read Longevity Evidence</a><h2>02 Mechanisms</h2><a class="" href="../02-mechanisms/cellular-senescence-and-sasp.html">Cellular Senescence and SASP</a><a class="" href="../02-mechanisms/dna-methylation-and-epigenetic-drift.html">DNA Methylation and Epigenetic Drift</a><a class="" href="../02-mechanisms/inflammaging.html">Inflammaging</a><a class="" href="../02-mechanisms/loss-of-cellular-identity.html">Loss of Cellular Identity</a><a class="" href="../02-mechanisms/partial-reprogramming.html">Partial Reprogramming</a><a class="" href="../02-mechanisms/stem-cell-exhaustion.html">Stem Cell Exhaustion</a><h2>03 Interventions</h2><a class="" href="../03-interventions/caloric-restriction.html">Caloric Restriction</a><a class="" href="../03-interventions/exercise.html">Exercise</a><a class="" href="../03-interventions/omega-3-and-vitamin-d.html">Omega-3 and Vitamin D</a><a class="" href="../03-interventions/partial-reprogramming-therapies.html">Partial Reprogramming Therapies</a><a class="" href="../03-interventions/senolytics.html">Senolytics</a><a class="" href="../03-interventions/senomorphics.html">Senomorphics</a><a class="" href="../03-interventions/sleep.html">Sleep</a><h2>04 Species Comparisons</h2><a class="" href="../04-species-comparisons/bats.html">Bats</a><a class="" href="../04-species-comparisons/greenland-shark.html">Greenland Shark</a><a class="" href="../04-species-comparisons/humans.html">Humans</a><a class="" href="../04-species-comparisons/hydra-and-low-senescence-models.html">Hydra and Low-Senescence Models</a><a class="" href="../04-species-comparisons/mice.html">Mice</a><a class="" href="../04-species-comparisons/naked-mole-rat.html">Naked Mole Rat</a><h2>05 Evidence</h2><a class="" href="../05-evidence/animal-lifespan-evidence.html">Animal Lifespan Evidence</a><a class="" href="../05-evidence/claims-needing-verification.html">Claims Needing Verification</a><a class="" href="../05-evidence/claims-from-deepseek-dialog.html">Claims from DeepSeek Dialog</a><a class="" href="../05-evidence/human-clinical-evidence.html">Human Clinical Evidence</a><h2>06 Practical Use</h2><a class="" href="../06-practical-use/what-seems-actionable-now.html">What Seems Actionable Now</a><h2>99 Meta</h2><a class="" href="../99-meta/research-backlog.html">Research Backlog</a><h2>Start here</h2><a class="" href="../home.html">Longevity Knowledge Base</a></nav></aside><main><div class="meta">Longevity Knowledge Base · evidence-aware research notes</div><h1 id="aging-dashboard">Aging Dashboard</h1>
+<p>Этот дашборд лучше всего смотреть как <strong>одну главную markdown-страницу</strong> в Obsidian:
+- сверху — краткие выводы,
+- в середине — сводные таблицы,
+- снизу — переходы в детализацию,
+- сбоку — backlinks / local graph.</p>
+<h2 id="_1">Как читать шкалы</h2>
+<ul>
+<li><strong>Importance</strong>: насколько фактор вероятно причинно важен</li>
+<li><strong>Tractability</strong>: насколько реально им управлять сегодня</li>
+<li><strong>Human evidence</strong>: сила данных у людей</li>
+<li><strong>Preclinical support</strong>: насколько есть согласованный сигнал в животных/механистических моделях</li>
+<li><strong>Readiness</strong>: practical status для применения</li>
+<li><strong>Current evidence-backed effect</strong>: что уже более-менее подтверждено на сегодня</li>
+<li><strong>Theoretical / preclinical upside</strong>: верхняя граница потенциала по механистике, мышам и ранним данным</li>
+</ul>
+<p>Шкалы: 1 = низко, 5 = высоко.</p>
+<h2 id="executive-snapshot">Executive snapshot</h2>
+<ul>
+<li>Наиболее practically useful interventions сегодня: <a href="../03-interventions/exercise.html">Exercise</a>, <a href="../03-interventions/sleep.html">Sleep</a>, <a href="../03-interventions/caloric-restriction.html">Caloric Restriction</a>, <a href="../03-interventions/omega-3-and-vitamin-d.html">Omega-3 and Vitamin D</a>.</li>
+<li>Наиболее scientifically exciting but uncertain directions: <a href="../02-mechanisms/partial-reprogramming.html">Partial Reprogramming</a>, <a href="../03-interventions/senolytics.html">Senolytics</a>, <a href="../03-interventions/partial-reprogramming-therapies.html">Partial Reprogramming Therapies</a>.</li>
+<li>Эпигенетический дрейф выглядит важным, но в базе рассматривается как <strong>один из центральных механизмов</strong>, а не как единственная причина старения.</li>
+<li>Для каждого claim нужно различать: marker / mechanism / therapy target.</li>
+<li>Эта база хранит <strong>не только доказанное сейчас</strong>, но и <strong>promising preclinical / theoretical upside</strong> — при условии, что уровень сигнала явно размечен.</li>
+</ul>
+<h2 id="core-aging-factors">Core aging factors</h2>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Type</th>
+<th style="text-align: right;">Importance</th>
+<th style="text-align: right;">Tractability</th>
+<th style="text-align: right;">Human evidence</th>
+<th style="text-align: right;">Healthspan upside if influenced</th>
+<th style="text-align: right;">Lifespan upside</th>
+<th>Confidence</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DNA methylation / epigenetic drift</td>
+<td>mechanism</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td>medium-low</td>
+<td><a href="../02-mechanisms/dna-methylation-and-epigenetic-drift.html">DNA Methylation and Epigenetic Drift</a></td>
+</tr>
+<tr>
+<td>Cellular senescence</td>
+<td>mechanism</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td>medium-low</td>
+<td><a href="../02-mechanisms/cellular-senescence-and-sasp.html">Cellular Senescence and SASP</a></td>
+</tr>
+<tr>
+<td>Chronic inflammation / inflammaging</td>
+<td>mechanism</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td>medium</td>
+<td><a href="../02-mechanisms/inflammaging.html">Inflammaging</a></td>
+</tr>
+<tr>
+<td>Stem cell exhaustion</td>
+<td>mechanism</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td>low</td>
+<td><a href="../02-mechanisms/stem-cell-exhaustion.html">Stem Cell Exhaustion</a></td>
+</tr>
+<tr>
+<td>Loss of cellular identity</td>
+<td>mechanism</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td>low</td>
+<td><a href="../02-mechanisms/loss-of-cellular-identity.html">Loss of Cellular Identity</a></td>
+</tr>
+<tr>
+<td>Mitochondrial dysfunction</td>
+<td>mechanism</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td>low-medium</td>
+<td><a href="../01-concepts/hallmarks-and-drivers-of-aging.html">Hallmarks and Drivers of Aging</a></td>
+</tr>
+<tr>
+<td>Loss of proteostasis</td>
+<td>mechanism</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td>low-medium</td>
+<td><a href="../01-concepts/hallmarks-and-drivers-of-aging.html">Hallmarks and Drivers of Aging</a></td>
+</tr>
+<tr>
+<td>Deregulated nutrient sensing</td>
+<td>mechanism</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td>medium</td>
+<td><a href="../01-concepts/hallmarks-and-drivers-of-aging.html">Hallmarks and Drivers of Aging</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="current-interventions">Current interventions</h2>
+<table>
+<thead>
+<tr>
+<th>Intervention</th>
+<th>Targets</th>
+<th style="text-align: right;">Human evidence</th>
+<th style="text-align: right;">Preclinical support</th>
+<th>Readiness</th>
+<th>Risk</th>
+<th>Biomarkers</th>
+<th>Function</th>
+<th>Morbidity</th>
+<th>Mortality / lifespan</th>
+<th>Confidence</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exercise</td>
+<td>multi-system</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td>actionable now</td>
+<td>low</td>
+<td>moderate-high</td>
+<td>high</td>
+<td>high</td>
+<td>moderate-high mortality signal; no proof of radical lifespan extension</td>
+<td>high</td>
+<td><a href="../03-interventions/exercise.html">Exercise</a></td>
+</tr>
+<tr>
+<td>Sleep optimization</td>
+<td>multi-system</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td>actionable now</td>
+<td>low</td>
+<td>low-moderate</td>
+<td>moderate-high</td>
+<td>moderate</td>
+<td>low direct interventional proof; observational signal exists</td>
+<td>medium-high</td>
+<td><a href="../03-interventions/sleep.html">Sleep</a></td>
+</tr>
+<tr>
+<td>Caloric restriction / mild energy restriction</td>
+<td>nutrient sensing, inflammation</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td>actionable with caution</td>
+<td>low-medium</td>
+<td>high</td>
+<td>low-moderate / context-dependent</td>
+<td>moderate</td>
+<td>unproven in humans; substantial preclinical upside</td>
+<td>medium</td>
+<td><a href="../03-interventions/caloric-restriction.html">Caloric Restriction</a></td>
+</tr>
+<tr>
+<td>Omega-3 + vitamin D</td>
+<td>inflammation, general resilience</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td>actionable with context</td>
+<td>low</td>
+<td>low-moderate / context-dependent</td>
+<td>low</td>
+<td>low-moderate / indication-dependent</td>
+<td>low or unconvincing as broad longevity intervention</td>
+<td>medium</td>
+<td><a href="../03-interventions/omega-3-and-vitamin-d.html">Omega-3 and Vitamin D</a></td>
+</tr>
+<tr>
+<td>Senolytics</td>
+<td>senescent cell burden</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td>experimental</td>
+<td>medium-high</td>
+<td>early exploratory signal</td>
+<td>uncertain</td>
+<td>early disease-context signal</td>
+<td>unknown</td>
+<td>low-medium</td>
+<td><a href="../03-interventions/senolytics.html">Senolytics</a></td>
+</tr>
+<tr>
+<td>Senomorphics</td>
+<td>SASP / inflammatory signaling</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td>experimental</td>
+<td>unknown</td>
+<td>limited</td>
+<td>uncertain</td>
+<td>uncertain</td>
+<td>unknown</td>
+<td>low</td>
+<td><a href="../03-interventions/senomorphics.html">Senomorphics</a></td>
+</tr>
+<tr>
+<td>Partial reprogramming therapies</td>
+<td>epigenetic state, cell identity</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td>experimental</td>
+<td>high/unknown</td>
+<td>early/localized translational work only</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>unknown</td>
+<td>low</td>
+<td><a href="../03-interventions/partial-reprogramming-therapies.html">Partial Reprogramming Therapies</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="species-comparison-anchors">Species comparison anchors</h2>
+<ul>
+<li><a href="../04-species-comparisons/humans.html">Humans</a></li>
+<li><a href="../04-species-comparisons/mice.html">Mice</a></li>
+<li><a href="../04-species-comparisons/naked-mole-rat.html">Naked Mole Rat</a></li>
+<li><a href="../04-species-comparisons/greenland-shark.html">Greenland Shark</a></li>
+<li><a href="../04-species-comparisons/hydra-and-low-senescence-models.html">Hydra and Low-Senescence Models</a></li>
+</ul>
+<h2 id="verification-updates-pass-1">Verification updates (pass 1)</h2>
+<ul>
+<li>Epigenetic information loss now has explicit causality-supporting mammalian literature in this vault, so it should not be treated as a mere correlational clock.</li>
+<li>Human senolytic evidence exists, but is still pilot-scale and disease-context-heavy.</li>
+<li>Partial reprogramming now has a verified human Phase 1 trial record in ophthalmology (<code>NCT07290244</code>), which upgrades it from hypothetical to early clinical translation.</li>
+<li>None of these points justify strong human lifespan-extension claims yet.</li>
+</ul>
+<h2 id="open-questions">Open questions</h2>
+<ul>
+<li>Насколько эпигенетический дрейф является корневой причиной, а не в основном интегральным маркером?</li>
+<li>Где находится реальный translational bottleneck для сенолитиков у людей?</li>
+<li>Можно ли безопасно добиться partial reprogramming без потери клеточной идентичности в масштабе тканей?</li>
+<li>Какие biomarkers лучше всего коррелируют именно с future healthspan, а не только с chronological age?</li>
+</ul>
+<h2 id="evidence-hygiene">Evidence hygiene</h2>
+<ul>
+<li>Сырые тезисы из исходного диалога: <a href="../05-evidence/claims-from-deepseek-dialog.html">Claims from DeepSeek Dialog</a></li>
+<li>Список спорных или слишком уверенных утверждений: <a href="../05-evidence/claims-needing-verification.html">Claims Needing Verification</a></li>
+<li>Краткое правило интерпретации: <a href="../01-concepts/how-to-read-longevity-evidence.html">How to Read Longevity Evidence</a></li>
+</ul><footer>Source of truth: Obsidian vault · Generated static view for GitHub Pages</footer></main></div></body></html>
